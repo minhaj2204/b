@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body style="background-color:#FAFAFA">
+
+    <!-- Navbar start-->
+
+    <nav id="navbar" class="bg-white shadow-md py-4 transition-colors duration-500">
+
+        <div class="container mx-auto flex items-center justify-between px-4">
+
+            <!-- Logo Section -->
+
+            <img src="image/c4u full logo_2022 1.png" alt="Creatives for You Logo" class="h-8 mr-3">
+
+            <!-- Hamburger Icon -->
+
+            <button id="menu-toggle" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Navigation Links (Desktop) -->
+
+            <ul id="nav-links" class="hidden md:flex space-x-6 text-gray-700">
+                <li><a href="#" class="hover:text-gray-900">Home</a></li>
+                <li><a href="#" class="hover:text-gray-900">About Us</a></li>
+                <li><a href="#" class="text-red-500 hover:text-red-600">Upskill</a></li>
+                <li><a href="#" class="hover:text-gray-900">Contact Us</a></li>
+            </ul>
+
+            <!-- Button Section (Desktop) -->
+
+            <div class="hidden md:flex items-center space-x-4">
+
+                <a href="#"
+                    class="bg-red-500 text-white px-6 py-2 rounded-md text-lg font-semibold hover:bg-red-600">Register
+                    Interest
+                </a>
+                <button><i id="mobile-theme-icon" class="fas fa-moon"></i></button>
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <div id="mobile-menu" class="hidden bg-white md:hidden flex-col p-4 space-y-4">
+
+            <a href="#" class="block text-gray-700 hover:text-gray-900">Home</a>
+            <a href="#" class="block text-gray-700 hover:text-gray-900">About Us</a>
+            <a href="#" class="block text-red-500 hover:text-red-600">Upskill</a>
+            <a href="#" class="block text-gray-700 hover:text-gray-900">Contact Us</a>
+
+            <a href="#" class="block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Register Interest</a>
+            <button id="mobile-theme-toggle" class="block bg-gray-800 text-white px-4 py-2 rounded-md">
+                <i id="mobile-theme-icon" class="fas fa-moon"></i> Dark Mode
+            </button>
+
+        </div>
+
+    </nav>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- navbar end -->
+
+    <!-- hero start -->
+
+    <!-- Main Content Section -->
+
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12">
+
+        <div class="flex flex-col lg:flex-row items-center lg:space-x-10">
+
+            <!-- Text Content -->
+
+            <div class="text-center lg:text-left lg:w-1/2 space-y-6">
+
+                <p class="text-gray-500 text-lg">Discover <span class="text-red-500">-</span> Interact <span
+                        class="text-red-500">-</span> Engage
+                </p>
+
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                    Google <br> <span class="text-red-500 underline underline-offset-[20px]"
+                        style="line-height: 100px;">IT Support</span> Certificate
+                </h1>
+                <p class="text-gray-600 text-lg mt-4 leading-relaxed font-semibold">
+                    This is your path to a career in IT. In this program, you'll learn in-demand skills with no degree
+                    or experience required.
+                </p>
+
+                <div class="flex justify-center lg:justify-start space-x-6 mt-6 flex-wrap">
+
+                    <div class="text-center">
+                        <div class="text-green-500 font-bold text-2xl">438</div>
+                        <div class="text-gray-500">Videos</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-green-500 font-bold text-2xl">151</div>
+                        <div class="text-gray-500">Readings</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-green-500 font-bold text-2xl">108</div>
+                        <div class="text-gray-500">Quizzes</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-green-500 font-bold text-2xl">24</div>
+                        <div class="text-gray-500">Exercises</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-green-500 font-bold text-2xl">4</div>
+                        <div class="text-gray-500">Assignments</div>
+                    </div>
+
+                </div>
+
+                <div class="mt-8 space-x-4 flex justify-center lg:justify-start flex-wrap">
+
+                    <button
+                        class="bg-red-500 text-white font-semibold px-8 py-3 rounded-full shadow hover:bg-red-600 transition">Sign
+                        up
+                    </button>
+
+                    <button
+                        class="border border-gray-300 text-gray-700 font-semibold px-8 py-3 rounded-full hover:border-gray-400 transition hover:bg-green-500">Learn
+                        more
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Image Content -->
+            <div class="relative mt-10 lg:mt-0 lg:w-1/2">
+                <img src="image/Group 1964.png" alt="Person Working on Laptop" class="w-full h-auto object-cover">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Partner Logos Section -->
+    <section id="partner" class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-6 md:py-8 lg:py-12 bg-white">
+        <div class="flex flex-col items-center text-center lg:text-left lg:flex-row lg:space-x-8">
+            <!-- Partner Info -->
+            <div class="mb-6 lg:mb-0 flex-1 w-full max-w-xs">
+                <span class="text-gray-600 font-medium text-sm md:text-base block w-full">
+                    Pave your path to career success by gaining a professional Google certificate with the support of
+                </span>
+            </div>
+
+            <!-- Logos Container -->
+            <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6 lg:justify-start flex-1 w-full">
+                <!-- Divider Line (hidden on mobile) -->
+                <div class="hidden md:block bg-black h-10 w-px lg:h-28"></div>
+
+                <!-- Google Logo -->
+                <img src="image/Google.png" alt="Google Logo" class="h-12 md:h-16 lg:h-28 lg:w-44 max-w-xs ">
+
+                <!-- Divider Line -->
+                <div class="hidden md:block bg-black h-10 w-px lg:h-28"></div>
+
+                <!-- Work & Pensions Logo -->
+                <img src="image/Work & Pensions.png" alt="Work & Pensions Logo"
+                    class="h-12 md:h-16 lg:h-28 lg:w-44 max-w-xs ">
+
+                <!-- Divider Line -->
+                <div class="hidden md:block bg-black h-10 w-px lg:h-28"></div>
+
+                <!-- C4U Logo -->
+                <img src="image/c4u full logo_2022 1.png" alt="C4U Logo" class="h-10 md:h-14 lg:h-16 max-w-xs ">
+            </div>
+        </div>
+    </section>
+
+    <!-- hero end -->
+
+    <!-- skills start -->
+    <!-- Main Container -->
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+            <!-- Left Section: What You Will Learn -->
+            <div class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+                <h2 class="text-2xl font-semibold text-gray-800">What You Will Learn</h2>
+                <hr class="border-t border-red-300">
+                <ul class="space-y-4 text-gray-800">
+                    <li class="flex items-center gap-4">
+                        <img src="image/Checkmark.png" alt="" class="mb-10">
+                        <span class="mb-10">Gain skills required to succeed in an entry-level IT job</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <img src="image/Checkmark.png" alt="" class="mb-10">
+                        <span class="mb-10">Learn to perform day-to-day IT support tasks including computer assembly,
+                            wireless networking, installing programs, and customer service</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <img src="image/Checkmark.png" alt="" class="mb-10">
+                        <span class="mb-10">Learn how to provide end-to-end customer support, ranging from identifying
+                            problems to troubleshooting and debugging</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <img src="image/Checkmark.png" alt="" class="mb-10 ">
+                        <span class="mb-10">Learn to use systems including Linux, Domain Name Systems, Command-Line
+                            Interface, and Binary Code</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section: Skills You Will Gain -->
+            <div class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+                <div class="flex flex-col items-start">
+                    <!-- Placeholder for IT illustration -->
+                    <img src="image/IT_social 1.png" alt="IT Illustration" class="mb-4 w-full rounded-lg">
+                    <h2 class="text-2xl font-semibold text-gray-800">Skills You Will Gain</h2>
+                </div>
+                <hr class="border-t border-red-300">
+                <div class="flex flex-wrap gap-3">
+                    <!-- Skill Buttons with Hover and Focus Effects for Large Screens Only -->
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-green-500 lg:hover:text-white lg:hover:bg-green-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-green-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Debugging</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-red-500 lg:hover:text-white lg:hover:bg-red-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-red-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Customer
+                        Service</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-blue-500 lg:hover:text-white lg:hover:bg-blue-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-blue-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Customer
+                        Support</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-yellow-500 lg:hover:text-white lg:hover:bg-yellow-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-yellow-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Domain
+                        Name System (DNS)</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-orange-500 lg:hover:text-white lg:hover:bg-orange-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-orange-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Network
+                        Model</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-fuchsia-500 lg:hover:text-white lg:hover:bg-fuchsia-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-fuchsia-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Linux</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-indigo-500 lg:hover:text-white lg:hover:bg-indigo-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-indigo-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Encryption
+                        Algorithms</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-green-500 lg:hover:text-white lg:hover:bg-green-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-green-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Network
+                        Protocols</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-yellow-500 lg:hover:text-white lg:hover:bg-yellow-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-yellow-900 lg:hover:border-none duration-500 ease-in-out border-red-400">IPv4</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-pink-500 lg:hover:text-white lg:hover:bg-pink-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-pink-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Troubleshooting</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-blue-500 lg:hover:text-white lg:hover:bg-blue-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-blue-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Binary
+                        Code</span>
+                    <span
+                        class="px-4 py-2 text-sm border rounded-full hover:text-white hover:bg-red-500 lg:hover:text-white lg:hover:bg-red-500 lg:transform lg:hover:scale-105 lg:hover:translate-y-3 lg:hover:shadow-lg lg:hover:shadow-red-900 lg:hover:border-none duration-500 ease-in-out border-red-400">Cloud
+                        Computing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skill end -->
+
+    <!-- more skill start -->
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+
+        <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
+
+            <!-- Job List Section -->
+
+            <div
+                class="bg-white p-4 md:p-6 lg:p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-700">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4 hover:text-blue-600">Jobs Associated with
+                    Certificate
+                </h2>
+
+                <div class="p-4 sm:p-6">
+                    <div class="grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
+
+                        <!-- Left Job List -->
+                        <div>
+
+                            <ul class="space-y-3">
+
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">Database
+                                        Administrator</span>
+                                </li>
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">Tech Support
+                                        Specialist</span>
+                                </li>
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">IT
+                                        Specialist</span>
+                                </li>
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">Systems
+                                        Analyst</span>
+                                </li>
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">Network
+                                        Engineer</span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- Right Job List -->
+
+                        <div>
+
+                            <ul class="space-y-3">
+
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">Help Desk
+                                        Technician</span>
+                                </li>
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">IT Support
+                                        Specialist</span>
+                                </li>
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">IT
+                                        Technician</span>
+                                </li>
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">Computer User
+                                        Specialist</span>
+                                </li>
+                                <li class="flex items-center text-gray-700 gap-2 md:gap-4">
+                                    <img src="image/Checkmark.1.png" alt="" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6">
+                                    <span class="hover:text-green-500 hover:translate-x-1 duration-500">IT
+                                        Assistant</span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Image Section -->
+            <div
+                class="bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105 duration-700  p-4 md:p-6 lg:p-8">
+                <img src="image/IT_Support_1-removebg-preview.png">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--  more skill end -->
+
+    <!-- degree start -->
+
+    <div class="bg-white shadow-lg flex flex-col md:flex-row h-auto items-center px-4 md:px-16 py-8 mb-16">
+
+        <!-- Text Section -->
+
+        <div class="flex-1 text-center md:text-left">
+
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800">
+                There are 5 Courses in this Professional Certificate
+            </h2>
+
+            <div
+                class="mt-8 sm:mt-12 flex flex-col md:flex-row justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-4">
+
+                <!-- Course Buttons -->
+
+                <button
+                    class="px-6 sm:px-8 py-2 md:hover:bg-blue-500 md:hover:translate-y-3 border-black border md:hover:border-none md:hover:shadow-lg md:hover:shadow-blue-600 bg-green-500 duration-500 text-white font-semibold rounded-full">
+                    Course 1
+                </button>
+
+                <button
+                    class="px-6 sm:px-8 py-2 md:hover:bg-green-500 md:hover:translate-y-3 md:hover:text-white duration-500 border border-black md:hover:border-none md:hover:shadow-lg md:hover:shadow-green-600 text-gray-700 font-semibold rounded-full">
+                    Course 2
+                </button>
+
+                <button
+                    class="px-6 sm:px-8 py-2 md:hover:bg-pink-500 md:hover:translate-y-3 md:hover:text-white duration-500 border border-black md:hover:border-none md:hover:shadow-lg md:hover:shadow-pink-600 text-gray-700 font-semibold rounded-full">
+                    Course 3
+                </button>
+
+                <button
+                    class="px-6 sm:px-8 py-2 md:hover:bg-red-500 md:hover:translate-y-3 md:hover:text-white duration-500 border border-black md:hover:border-none md:hover:shadow-lg md:hover:shadow-red-600 text-gray-700 font-semibold rounded-full">
+                    Course 4
+                </button>
+
+                <button
+                    class="px-6 sm:px-8 py-2 md:hover:bg-yellow-500 md:hover:translate-y-3 md:hover:text-white duration-500 border border-black md:hover:border-none md:hover:shadow-lg md:hover:shadow-yellow-600 text-gray-700 font-semibold rounded-full">
+                    Course 5
+                </button>
+
+            </div> 
+            
+            <hr class="border-t mt-[200px] border-red-300">
+
+        </div>
+
+        <!-- Badge Section (Hidden on small screens) -->
+
+        <div class="mt-8 md:mt-0 hidden md:block">
+
+            <div class="relative">
+                <img src="image/Group 238902.png" alt="Badge"
+                    class="mt-8 md:mt-16 max-w-[80%] lg:max-w-full mx-auto hover:-translate-x-1/4 duration-1000 hover:-translate-y-1/4">
+            </div>
+            <hr class="border-t border-red-300 mt-[-106px]">
+        </div>
+        
+    </div>
+
+    <!-- degree end -->
+
+    <!--learn from tutul bhai start-->
+
+    <!--learn from tutul bhai end  -->
+    <div class="m-6">
+        <img src="image/Group 238901.png" alt="">
+        <img src="image/Connector Vector.png" alt="">
+        <img src="image/Group 238903.png" alt="">
+        <img src="image/Connector Vector (1).png" alt="">
+        <img src="image/Group 238904.png" alt="">
+        <img src="image/Connector Vector (2).png" alt="">
+        <img src="image/Group 238906.png"></img>
+        <img src="image/Connector Vector (3).png" alt="">
+        <img src="image/Group 238907.png" alt="">
+    </div>
+    <!-- last para start -->
+
+    <!-- Testimonial Section -->
+    <section class="relative py-16 px-4 bg-white">
+        <img src="image/brooke-cagle-g1Kr4Ozfoac-unsplash 2.png" alt="Background Image"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <div class="bg-white w-[90%] md:w-[400px] rounded-lg p-8 max-w-lg relative z-10 mx-4 md:mx-auto lg:mx-40 mt-16">
+            <!-- Testimonial Image -->
+            <img src="image/“.png" alt="Daniel's Avatar" class="mb-5 ">
+
+            <p class="text-gray-800 text-lg mb-4">
+                "I worked in retail and needed to make a change. The certificate is really designed for you to go at
+                your
+                own pace. This is something that anybody can do."
+            </p>
+
+            <footer class="text-sm text-[#F9CCC7]">
+                Daniel, IT Support Specialist at Central Community College and Google IT Support Certificate graduate
+            </footer>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="bg-white">
+        <footer class="bg-white py-12 px-6">
+            <div class="container mx-auto lg:flex lg:justify-between">
+                <!-- Logo and Address -->
+                <div class="mb-8 lg:mb-0 lg:w-1/4">
+                    <div class="flex items-center mb-4 justify-center lg:justify-start">
+                        <img src="image/c4u full logo_2022 1.png" alt="Creatives for You Logo" class="w-24 h-auto">
+                    </div>
+                    <address class="footer-address text-gray-500 text-sm not-italic text-center lg:text-left"
+                        style="line-height: 30px;">
+                        Level39<br>
+                        One Canada Square,<br>
+                        Canary Wharf,<br>
+                        London, E14 5AB
+                    </address>
+                </div>
+
+                <!-- Footer Links -->
+                <nav class="grid grid-cols-2 gap-8 md:grid-cols-4 text-gray-700 text-sm lg:w-3/4">
+
+                    <!-- Home Links -->
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-5 text-center lg:text-left">Home</h3>
+                        <ul>
+                            <li class="mb-5 text-center lg:text-left"><a href="#"
+                                    class="hover:underline">Collaborations</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">Statistics</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">How It
+                                    Works</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#"
+                                    class="hover:underline">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- About Us Links -->
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-5 text-center lg:text-left">About Us</h3>
+                        <ul>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">Who We Are</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">Mission
+                                    Statement</a></li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">Our Vision</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">The Team</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Upskill Links -->
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-5 text-center lg:text-left">Upskill</h3>
+                        <ul>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">IT Support</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">Project
+                                    Management</a></li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">Data
+                                    Analysts</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">UX Design</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Us Links -->
+                    <div>
+
+                        <h3 class="font-semibold text-gray-900 mb-5 text-center lg:text-left">Contact Us</h3>
+                        <ul>
+                            <li class="mb-5 text-center lg:text-left"><a href="#" class="hover:underline">Your
+                                    Message</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a href="mailto:info@creativesforyou.com"
+                                    class="hover:underline">Email</a></li>
+                            <li class="mb-5 text-center lg:text-left"><a href="tel:+1234567890"
+                                    class="hover:underline">Phone Number</a>
+                            </li>
+                            <li class="mb-5 text-center lg:text-left"><a
+                                    href="https://www.linkedin.com/company/creativesforyou" target="_blank"
+                                    rel="noopener noreferrer" class="hover:underline">LinkedIn</a></li>
+                        </ul>
+
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </footer>
+
+        <hr>
+
+        <!-- Copyright -->
+        <div class="mt-12 pt-4 text-center text-gray-500 text-sm">
+            &copy; <span id="currentYear"></span> Creatives For You LTD. All rights reserved.
+        </div>
+
+    </div>
+
+    <!--  last para is finish 😁 -->
+</body>
+
+</html>
