@@ -4,77 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Creatives for You</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' };
+    </script>
 </head>
 
-<body style="background-color:#FAFAFA">
+<body class="bg-[#FAFAFA] dark:bg-gray-900 dark:text-white transition-colors duration-300">
 
-    <!-- Navbar start-->
-
-    <nav id="navbar" class="bg-white shadow-md py-4 transition-colors duration-500">
-
+    <!-- Navbar start -->
+    <nav class="bg-white shadow-md py-4 dark:bg-gray-900 transition-colors duration-300">
         <div class="container mx-auto flex items-center justify-between px-4">
 
             <!-- Logo Section -->
-
-            <img src="image/c4u full logo_2022 1.png" alt="Creatives for You Logo" class="h-8 mr-3">
+            <img src="image/c4u full logo_2022 1.png" alt="Creatives for You Logo" class="h-8 mr-3 dark:invert">
 
             <!-- Hamburger Icon -->
-
-            <button id="menu-toggle" class="md:hidden text-gray-700">
+            <button id="menu-toggle" class="md:hidden text-gray-700 dark:text-gray-200">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
 
             <!-- Navigation Links (Desktop) -->
-
-            <ul id="nav-links" class="hidden md:flex space-x-6 text-gray-700">
-                <li><a href="#" class="hover:text-gray-900">Home</a></li>
-                <li><a href="#" class="hover:text-gray-900">About Us</a></li>
+            <ul id="nav-links" class="hidden md:flex space-x-6 text-gray-700 dark:text-gray-300">
+                <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Home</a></li>
+                <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">About Us</a></li>
                 <li><a href="#" class="text-red-500 hover:text-red-600">Upskill</a></li>
-                <li><a href="#" class="hover:text-gray-900">Contact Us</a></li>
+                <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Contact Us</a></li>
             </ul>
 
             <!-- Button Section (Desktop) -->
-
             <div class="hidden md:flex items-center space-x-4">
-
                 <a href="#"
                     class="bg-red-500 text-white px-6 py-2 rounded-md text-lg font-semibold hover:bg-red-600">Register
-                    Interest
-                </a>
-                <button><i id="mobile-theme-icon" class="fas fa-moon"></i></button>
+                    Interest</a>
+                <button id="toggleDarkMode" class="text-gray-700 dark:text-gray-300">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:inline text-yellow-500"></i>
+                    <span class="ml-2" id="theme-text">Dark Mode</span>
+                </button>
             </div>
-
         </div>
 
         <!-- Mobile Menu -->
-
-        <div id="mobile-menu" class="hidden bg-white md:hidden flex-col p-4 space-y-4">
-
-            <a href="#" class="block text-gray-700 hover:text-gray-900">Home</a>
-            <a href="#" class="block text-gray-700 hover:text-gray-900">About Us</a>
+        <div id="mobile-menu" class="hidden bg-white dark:bg-gray-800 p-4 space-y-4 md:hidden">
+            <a href="#"
+                class="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Home</a>
+            <a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">About
+                Us</a>
             <a href="#" class="block text-red-500 hover:text-red-600">Upskill</a>
-            <a href="#" class="block text-gray-700 hover:text-gray-900">Contact Us</a>
-
+            <a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Contact
+                Us</a>
             <a href="#" class="block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Register Interest</a>
-            <button id="mobile-theme-toggle" class="block bg-gray-800 text-white px-4 py-2 rounded-md">
-                <i id="mobile-theme-icon" class="fas fa-moon"></i> Dark Mode
+            <button id="mobile-theme-toggle"
+                class="bg-gray-800 text-white px-4 py-2 rounded-md transition-colors duration-300 dark:bg-yellow-500 dark:text-gray-900">
+                <i id="mobile-theme-icon" class="fas fa-moon mr-2"></i>
+                <span id="mobile-theme-text">Dark Mode</span>
             </button>
-
         </div>
-
     </nav>
-
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
 
     <!-- navbar end -->
 
@@ -421,8 +410,8 @@
                     Course 5
                 </button>
 
-            </div> 
-            
+            </div>
+
             <hr class="border-t mt-[200px] border-red-300">
 
         </div>
@@ -437,7 +426,7 @@
             </div>
             <hr class="border-t border-red-300 mt-[-106px]">
         </div>
-        
+
     </div>
 
     <!-- degree end -->
@@ -568,7 +557,7 @@
                         </ul>
 
                     </div>
-                    
+
                 </nav>
             </div>
 
@@ -584,6 +573,45 @@
     </div>
 
     <!--  last para is finish 😁 -->
+    <!-- JavaScript for Mobile Menu and Dark Mode Toggle -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Dark mode toggle function
+        const toggleDarkMode = () => {
+            const themeText = document.getElementById('theme-text');
+            const mobileThemeText = document.getElementById('mobile-theme-text');
+
+            document.documentElement.classList.toggle('dark');
+
+            // Toggle text between 'Dark Mode' and 'Light Mode'
+            if (document.documentElement.classList.contains('dark')) {
+                themeText.textContent = 'Light Mode';
+                mobileThemeText.textContent = 'Light Mode';
+            } else {
+                themeText.textContent = 'Dark Mode';
+                mobileThemeText.textContent = 'Dark Mode';
+            }
+
+            // Save the theme preference in localStorage
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        };
+
+        // Event listener for theme toggle button
+        document.getElementById('toggleDarkMode').addEventListener('click', toggleDarkMode);
+        document.getElementById('mobile-theme-toggle').addEventListener('click', toggleDarkMode);
+
+        // Apply saved theme preference on load
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.getElementById('theme-text').textContent = 'Light Mode'; // Set the initial text to Light Mode
+            document.getElementById('mobile-theme-text').textContent = 'Light Mode'; // Set the initial text to Light Mode
+        }
+    </script>
+
 </body>
 
 </html>
