@@ -494,8 +494,9 @@
     </section>
 
     <!-- Footer Section -->
-     
-    <div class="bg-white">
+
+    <div class="bg-white dark:invert">
+
         <footer class="bg-white py-12 px-6">
             <div class="container mx-auto lg:flex lg:justify-between">
                 <!-- Logo and Address -->
@@ -513,6 +514,7 @@
                 </div>
 
                 <!-- Footer Links -->
+
                 <nav class="grid grid-cols-2 gap-8 md:grid-cols-4 text-gray-700 text-sm lg:w-3/4">
 
                     <!-- Home Links -->
@@ -589,17 +591,19 @@
 
         </footer>
 
-        <hr>
+        <hr class="border-t border-red-300">
 
         <!-- Copyright -->
         <div class="mt-12 pt-4 text-center text-gray-500 text-sm">
-            &copy; <span id="currentYear"></span> Creatives For You LTD. All rights reserved.
+           <p class="dark:text-black"> &copy; <span id="currentYear" class="dark:text-black"> Creatives For You LTD. All rights reserved.</span></p>
         </div>
 
     </div>
 
     <!--  last para is finish 😁 -->
+
     <!-- JavaScript for Mobile Menu and Dark Mode Toggle -->
+     
     <script>
         // Mobile menu toggle
         document.getElementById('menu-toggle').addEventListener('click', () => {
